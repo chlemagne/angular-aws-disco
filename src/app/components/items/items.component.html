@@ -1,0 +1,19 @@
+<h2>Items:</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Title</th>
+      <th scope="col">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <ng-container *ngFor="let item of items">
+      <tr>
+        <th scope="row">{{ item.id }}</th>
+        <td>{{ item.title }}</td>
+        <td>{{ item.description }}</td>
+      </tr>
+    </ng-container>
+  </tbody>
+</table>
